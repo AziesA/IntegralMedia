@@ -1,0 +1,42 @@
+.bg_buku {
+    height: 700px;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: fixed;
+    background-position: right 30px;
+
+}
+
+.bg_orang {
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: left 30px;
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+h4 {
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+@font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 7;
+}
+
+
+
+.mint {
+    font-palette: --Mint;
+}

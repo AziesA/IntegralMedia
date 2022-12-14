@@ -1,0 +1,35 @@
+.prg{
+    text-align: justify; 
+    text-indent: 0.5in;
+}
+
+.isimateri{
+	height:100%;
+	overflow-y:auto;
+	overflow-x: hidden;
+	font-family:candara;
+	font-size:17px;
+	line-height:1.5;
+	padding:2%;
+	text-align: justify ;
+	float:left;
+	color: black;
+}
+
+.frac {
+	display: inline-block;
+		position: relative;
+		vertical-align: middle;
+		letter-spacing: 0.001em;
+		text-align: center;
+	}
+	.frac > span {
+		display: block;
+		padding: 0.1em;
+	}
+	.frac span.bottom {
+		border-top: thin solid black;
+	}
+	.frac span.symbol {
+		display: none;
+	} 
