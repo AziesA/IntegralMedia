@@ -1,7 +1,6 @@
 .bg_buku {
-    height: 700px;
+    height: 750px;
     width: 100%;
-
     background-repeat: no-repeat;
     background-size: fixed;
     background-position: right 30px;
@@ -9,7 +8,7 @@
 }
 
 .bg_orang {
-    height: 700px;
+    height: 750px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: 35%;
@@ -23,7 +22,6 @@
 
 h4 {
     font-family: 'Rocher';
-    text-align: center;
     font-size: 30px;
     display: flex;
     flex-direction: column;

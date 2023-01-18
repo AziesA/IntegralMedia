@@ -34,7 +34,7 @@
         <ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../Media Integral.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../HalamanUtama.html  ">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-superscript"></i>
                 </div>
@@ -52,7 +52,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSatu"
                     aria-expanded="true" aria-controls="collapseSatu">
                     <i class="fa-solid fa-1"></i>
@@ -69,7 +69,7 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDua"
                     aria-expanded="true" aria-controls="collapseDua">
                     <i class="fa-solid fa-2"></i>
@@ -102,18 +102,9 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmpat"
-                    aria-expanded="true" aria-controls="collapseEmpat">
-                    <i class="fas fa-question"></i>
-                    <span>Evaluasi</span>
-                </a>
-                <div id="collapseEmpat" class="collapse " aria-labelledby="headingEmpat"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="soal evaluasi.html">Soal Evaluasi</a>
-                        
-                    </div>
-                </div>
+                <a class="nav-link" href="soal evaluasi.html">
+                    <i class="fas fa-book"></i>
+                    <span>Evaluasi</span></a>
             </li>
             <!-- Divider -->
 
@@ -214,14 +205,191 @@
                                         </ol>
                                     </div>
                                 </div>
+
                             </div>
                             <div id="dua" hidden>
                                 <div class="prg">
-                                    
+                                    Untuk memperdalam pemahaman kalian mengenai sifat-sifat dari integral tak tentu coba
+                                    perhatikan contoh soal dibawah ini!
+                                </div>
+                                <div class="accordion" id="accordionSatu">
+                                    <div class="card">
+                                        <div class="card-header" id="headingSatuEmpat">
+                                            <div class="mb-0">
+                                                <a type="button" class="btn btn-info" data-toggle="collapse"
+                                                    data-target="#collapseSatuEmpat" aria-expanded="false" role="button"
+                                                    aria-controls="collapseSatuEmpat">
+                                                    Contoh Soal 1
+                                                </a>
+                                                <a type="button" class="btn btn-info" data-toggle="collapse"
+                                                    data-target="#collapseDuaEmpat" aria-expanded="false" role="button"
+                                                    aria-controls="collapseDuaEmpat">
+                                                    Contoh Soal 2
+                                                </a>
+                                                <a type="button" class="btn btn-info" data-toggle="collapse"
+                                                    data-target="#collapseTigaEmpat" aria-expanded="false" role="button"
+                                                    aria-controls="collapseTigaEmpat">
+                                                    Contoh Soal 3
+                                                </a>
+                                                <a type="button" class="btn btn-info" data-toggle="collapse"
+                                                    data-target="#collapseEmpatEmpat" aria-expanded="false"
+                                                    role="button" aria-controls="collapseEmpatEmpat">
+                                                    Contoh Soal 4
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseSatuEmpat" class="collapse show"
+                                            aria-labelledby="headingSatuEmpat" data-parent="#accordionSatu">
+                                            <div class="card-body">
+                                                Tentukan hasil integral dari: $\int{3x^2}dx$ <br>
+                                                <b>Penyelesaian:</b><br>
+                                                $\int{3x^2}dx$ = $\frac{3}{2+1}x^{2+1} + c$<br>
+                                                &emsp;&emsp;&emsp;&ensp; = $\frac{3}{3}x^{3} + c$<br>
+                                                &emsp;&emsp;&emsp;&ensp; = $x^3 +c$
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="collapseDuaEmpat" class="collapse" aria-labelledby="headingDuaEmpat"
+                                            data-parent="#accordionSatu">
+                                            <div class="card-body">
+                                                Tentukan hasil integral dari: $\frac{1}{x^2} dx$ <br>
+                                                <b>Penyelesaian:</b><br>
+                                                $\frac{1}{x^2} dx$ = $\int{x^{-2}} dx$ <br>
+                                                &emsp;&emsp;&ensp;= $\frac{1}{-2+1}x^{-2+1} + c$<br>
+                                                &emsp;&emsp;&ensp;= $\frac{1}{-1}x^{-1} + c$ <br>
+                                                &emsp;&emsp;&ensp;= $-x^{-1} + c$<br>
+                                                &emsp;&emsp;&ensp;= $-\frac{1}{x} + c$
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="collapseTigaEmpat" class="collapse" aria-labelledby="headingTigaEmpat"
+                                            data-parent="#accordionSatu">
+                                            <div class="card-body">
+                                                Tentukan hasil integral dari: $\sqrt{x^3}dx$ <br>
+                                                <b>Penyelesaian:</b> <br>
+                                                $\sqrt{x^3}dx$ = $\int x^{\frac{3}{2}} dx$ <br>
+                                                &emsp;&emsp;&emsp; = $\frac{1}{\frac{3}{2}+1}x^{\frac{3}{2}+1}+c$<br>
+                                                &emsp;&emsp;&emsp; = $\frac{1}{\frac{5}{2}}x^{\frac{5}{2}}+c $<br>
+                                                &emsp;&emsp;&emsp; = $\frac{2}{5}x^{\frac{5}{2}}+c$
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="collapseEmpatEmpat" class="collapse"
+                                            aria-labelledby="headingEmpatEmpat" data-parent="#accordionSatu">
+                                            <div class="card-body">
+                                                Tentukan hasil integral dari: $\frac{1}{\sqrt{x^3}}dx$ <br>
+                                                <b>Penyelesaian:</b> <br>
+                                                $\frac{1}{\sqrt{x^3}}dx$ = $\int x^{-\frac{3}{2}} $ <br>
+                                                &emsp;&emsp;&emsp; = $\frac{1}{-\frac{3}{2}+1}x^{-\frac{3}{2}+1}+c$<br>
+                                                &emsp;&emsp;&emsp; = $\frac{1}{-\frac{1}{2}}x^{-\frac{1}{2}}+c$<br>
+                                                &emsp;&emsp;&emsp; = $\frac{-2}{\sqrt{x}}+c$
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="tiga" hidden>
+                                <div class="accordion" id="accordionDua">
+                                    <div class="card">
+                                        <div class="card-header" id="headingSatuTiga">
+                                            <div class="mb-0">
+                                                <a type="button" class="btn btn-info" data-toggle="collapse"
+                                                    data-target="#collapseSatuTiga" aria-expanded="false" role="button"
+                                                    aria-controls="collapseSatuTiga">
+                                                    Contoh Soal 1
+                                                </a>
+                                                <a type="button" class="btn btn-info" data-toggle="collapse"
+                                                    data-target="#collapseDuaTiga" aria-expanded="false" role="button"
+                                                    aria-controls="collapseDuaTiga">
+                                                    Contoh Soal 2
+                                                </a>
+                                                <a type="button" class="btn btn-info" data-toggle="collapse"
+                                                    data-target="#collapseTigaTiga" aria-expanded="false" role="button"
+                                                    aria-controls="collapseTigaTiga">
+                                                    Contoh Soal 3
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapseSatuTiga" class="collapse show"
+                                            aria-labelledby="headingSatuTiga" data-parent="#accordionDua">
+                                            <div class="card-body">
+                                                Tentukanlah nilai dari $\int(3x^6 – 2x^2 + 1) dx$ <br>
+                                                <b>Penyelesaian:</b><br>
+                                                $\int(3x^6 – 2x^2 + 1) dx$ = $\int 3x^6 dx - \int 2x^2 dx + \int 1 dx$
+                                                <br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;= $3\int x^6 dx -
+                                                2\int x^2 dx + \int 1 dx$<br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;=
+                                                $3[\frac{1}{6+1}x^{6+1}]-2[\frac{1}{2+1}x^{2+1}]+
+                                                x + c$<br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;=
+                                                $3[\frac{1}{7}x^7] - 2[\frac{1}{3}x^3] + x + c$<br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;=
+                                                $\frac{1}{7}x^7 - \frac{2}{3}x^3 + x + c$
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="collapseDuaTiga" class="collapse" aria-labelledby="headingDuaTiga"
+                                            data-parent="#accordionDua">
+                                            <div class="card-body">
+                                                Tentukanlah nilai dari $\int(x + 2)^2 dx$<br>
+                                                <b>Penyelesaian:</b><br>
+                                                $\int(x + 2)^2 dx$ = $\int(x+2)(x+2)dx$<br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;= $\int x^2 + 4x + 4 dx$<br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;= $\int x^2 dx + \int 4x dx + \int 4
+                                                dx$<br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;= $\int x^2 dx + 4 \int x dx + \int
+                                                4 dx $<br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;= $\frac{1}{2+1}x^{2+1} +
+                                                4[\frac{1}{1+1}x^{1+1}] + 4x + c $<br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;= $\frac{1}{3}x^3 +
+                                                4[\frac{1}{2}x^2] + 4x + c$ <br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;= $\frac{1}{3}x^3 +
+                                                \frac{4}{2}x^2 + 4x + c$ <br>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;=$\frac{1}{3}x^3 + 2x^2 + 4x + c$
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <div id="collapseTigaTiga" class="collapse" aria-labelledby="headingTigaTiga"
+                                            data-parent="#accordionDua">
+                                            <div class="card-body">
+                                                Carilah nilai $f(x)$ jika $f'(x)$ = $ x^3 - 4x^2 + 3$ dan $f(0) = 1$
+                                                <br>
+                                                <b>Penyelesaian:</b> <br>
+                                                $f'(x) = x^3 - 4x^2 + 3$ maka $f(x) = \int x^3 - 4x^2 + 3 dx$ <br>
+                                                $f(x) = \int x^3 dx - \int 4x^2 dx + \int 3 dx$<br>
+                                                &emsp;&emsp;&ensp;$= \int x^3 dx - 4\int x^2 dx + \int 3 dx $<br>
+                                                &emsp;&emsp;&ensp;$= \frac{1}{3+1}x^{3+1} - 4[\frac{1}{2+1}x^{2+1}] + 3x
+                                                + c$ <br>
+                                                &emsp;&emsp;&ensp;$= \frac{1}{4}x^4 - \frac{4}{3}x^3 + 3x + c$<br>
+                                                &rarr; $f(x) = \frac{1}{4}x^4 - \frac{4}{3}x^3 + 3x + c$ , karena $f(0)
+                                                = 1$, maka <br>
+                                                &rarr;$f(0) = \frac{1}{4}(0)^4 - \frac{4}{3}(0)^3 + 3(0) + c = 1$<br>
+                                                &rarr;$f(0) = 0 - 0 + 0 + c = 1$<br>
+                                                &rarr;&emsp;&ensp;&ensp; $= c = 1$, berarti c = 1<br>
+                                                Jadi, nilai $f(x)$ adalah $f(x)$ =$\frac{1}{4}x^4 - \frac{4}{3}x^3 + 3x
+                                                + 1$
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div id="tiga" hidden></div>
-                            <div id="empat" hidden></div>
+
+                            <div id="empat" hidden>
+
+                            </div>
                         </div>
 
 
@@ -257,7 +425,6 @@
                             <li class="page-item"><a id="btnsatu" class="page-link" onclick="satu()">1</a></li>
                             <li class="page-item"><a id="btndua" class="page-link" onclick="dua()">2</a></li>
                             <li class="page-item"><a id="btntiga" class="page-link" onclick="tiga()">3</a></li>
-                            <li class="page-item"><a id="btnempat" class="page-link" onclick="empat()">4</a></li>
                             <li class="page-item" id="btnnext">
                                 <a class="page-link" id="next" href="#" onclick="dua()" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
@@ -265,7 +432,7 @@
                             </li>
                             <li class="page-item" hidden id="mnext">
                                 <a class="page-link" id="next" href="../Media Integral.html" aria-label="Next">
-                                    <span aria-hidden="true">Materi Selanjutnya</span>
+                                    <span aria-hidden="true">Halaman Selanjutnya</span>
                                 </a>
                             </li>
                         </ul>

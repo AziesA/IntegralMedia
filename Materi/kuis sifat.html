@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pengertian Integral</title>
+    <title>Integral Tak Tentu Fungsi Aljabar dan Sifat-Sifatnya</title>
 
     <!-- Custom fonts for this template-->
     <link href="../asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -23,7 +23,6 @@
     <link href="../asset/css/styles.css" rel="stylesheet">
     <link href="../asset/css/stylebuatansendiri.css" rel="stylesheet">
     <link href="../asset/css/timerstyle.css" rel="stylesheet">
-    <link href="../asset/css/warnasytles.css" rel="stylesheet">
 
 </head>
 
@@ -54,7 +53,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSatu"
                     aria-expanded="true" aria-controls="collapseSatu">
                     <i class="fa-solid fa-1"></i>
@@ -64,15 +63,15 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item " href="pengertian integral.html">Materi</a>
-                        <a class="collapse-item" href="aktivitas pengertian.html">Aktivitas Siswa </a>
-                        <a class="collapse-item active" href="kuis pengertian.html">Kuis </a>
+                        <a class="collapse-item" href="aktivitas pengertian.html">Aktivitas Siswa</a>
+                        <a class="collapse-item" href="kuis pengertian.html">Kuis</a>
 
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDua"
                     aria-expanded="true" aria-controls="collapseDua">
                     <i class="fa-solid fa-2"></i>
@@ -82,7 +81,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="sifat integral.html">Materi</a>
                         <a class="collapse-item" href="aktivitas sifat.html">Aktivitas Siswa</a>
-                        <a class="collapse-item" href="kuis sifat.html">Kuis</a>
+                        <a class="collapse-item active" href="kuis sifat.html">Kuis</a>
                     </div>
                 </div>
             </li>
@@ -131,7 +130,7 @@
             <div id="content">
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                    <h1 class="h3 mb-0 text-gray-800"> Kuis Pengertian Integral</h1>
+                    <h1 class="h3 mb-0 text-gray-800">Integral Tak Tentu Fungsi Aljabar dan Sifat-Sifatnya</h1>
                     <!-- Sidebar Toggle (Topbar) -->
                     <!-- Topbar Search -->
                     <!-- Topbar Navbar -->
@@ -141,9 +140,9 @@
                 <!-- End of Topbar -->
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <div class="row  border-light " style="height:480px; width: 100%;">
+                    <div class="row  border-light isimateri" style="height:480px; width: 100%;">
                         <div class="col-lg">
-                            <div id="petunjukkuissatu">
+                            <div id="petunjukkuis">
                                 <div class="mint">
                                     <h4>Petunjuk Kuis</h4> <br>
                                 </div>
@@ -161,121 +160,79 @@
                                 </div>
                                 <br>
                             </div>
-                            <div id="biodatakuissatu">
+                            <div id="biodatakuis">
                                 <div class="mint">
                                     <h4>Biodata</h4> <br>
                                 </div>
-                                <div class="col-sm">
+                                <div>
                                     <form>
                                         <div class="form-group">
-                                            <label for="exampleFormControlInput1">Nama:</label>
-                                            <input type="text" class="form-control" id="namaform1" name="nama"
-                                                placeholder="Masukkan Nama Lengkap Anda">
+                                            <label for="formGroupExampleInput">Nama:</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                                placeholder="Masukkan Nama Anda">
                                         </div>
-                                        <div id="errNama"></div>
                                         <div class="form-group">
-                                            <label for="exampleFormControlInput2">Sekolah:</label>
-                                            <input type="text" class="form-control" id="sekolahform1" name="sekolah"
-                                                placeholder="Masukkan Kelas Anda">
-                                        </div>
-                                        <div id="errSekolah"></div>
-                                        <div class="form-group">
-                                            <label for="exampleFormControlSelect1">Kelas:</label>
-                                            <select class="form-control" id="kelasform1" name="kelas">
-                                                <option value="" selected>Masukkan Kelas Anda</option>
-                                                <option value="XI A">XI A</option>
-                                                <option value="XI B">XI B</option>
-                                                <option value="XI C">XI C</option>
-                                                <option value="XI D">XI D</option>
-                                                <option value="XI E">XI E</option>
-                                                <option value="XI F">XI F</option>
-                                                <option value="XI G">XI G</option>
+                                            <label for="formGroupExampleInput2">Kelas:</label>
+                                            <select class="form-control">
+                                                <option>Masukkan Kelas Anda</option>
+                                                <option>XI A</option>
+                                                <option>XI B</option>
+                                                <option>XI C</option>
+                                                <option>XI D</option>
+                                                <option>XI E</option>
+                                                <option>XI F</option>
+                                                <option>XI G</option>
                                             </select>
                                         </div>
-                                        <div id="errKelas"></div>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2">Sekolah:</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput2"
+                                                placeholder="Masukkan Nama Sekolah Anda">
+                                        </div>
                                         <div class="text-center text-box">
                                             <div class="col-auto">
-                                                <button id="start" type="button"
-                                                    class="btn btn-lg bg_hijau text-white thick" style="width:13%;"
-                                                    onclick="validasikuis()">Mulai</button>
+                                                <button type="button" class="btn btn-danger btn-lg mb-2"
+                                                    style="width:13%;" onclick="mulaikuis()">Mulai</button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div id="soalkuissatu">
-                                <div class="container bg-white">
-                                    <div class="row border border-secondary bg-light justify-content-center mt-2"
+                            <div id="soalkuis" hidden>
+                                <div class="container">
+                                    <div class="row border border-secondary bg-light  isimateri"
                                         style="height:80px; width: 70%;">
-                                        <div class="col">
-                                            <div id="nomor" class=" mint" style="position:relative;top:20px;">
-                                                <h4>Nomor</h4>
-                                            </div>
-                                            <div class="clock" style="position:relative;top:-32px;left:650px;">
-                                                <svg viewBox="0 0 220 220">
-                                                    <circle shape-rendering="geometricPrecision" cx="110" cy="110"
-                                                        r="96" />
-                                                    <circle shape-rendering="geometricPrecision" class="indicator"
-                                                        cx="110" cy="110" r="96" />
-                                                </svg>
-                                                <div class="value-container">
-                                                    <span class="minutes">30</span>
-                                                    :
-                                                    <span class="seconds">00</span>
-                                                </div>
-                                            </div>
-
+                                        <div class=" mint">
+                                            <h4>Kuis 1</h4>
                                         </div>
+                                        <div id="app" style="position:absolute;top:10px;left:60%;"></div>
                                     </div>
-                                    <div class="row border border-secondary isimateri mb-2"
+                                </div>
+                                <div class="container">
+                                    <div class="row border border-secondary isimateri"
                                         style="height:350px; width: 70%;">
-                                        <div class="col-lg">
-                                            <div id="quizsatu">
-                                            </div>
-                                            <div><input type="radio" id="" name="options">
-                                                <span id=""> </span>
-                                            </div>
-                                            <div><input type="radio" id="b" name="options">
-                                                <span id=""> </span>
-                                            </div>
-                                            <div><input type="radio" id="" name="options">
-                                                <span id=""> </span>
-                                            </div>
-                                            <div><input type="radio" id="" name="options">
-                                                <span id=""> </span>
-                                            </div>
-                                            <button
-                                                class="btn btn-lg btn-primary text-white thick mt-4">Selanjutnya</button>
-                                        </div>
-                                    </div>
-                                    <div class="row border border-secondary  isimateri"
-                                        style="height:280px; width: 200px; position:relative;left:100px;">
-                                        <div class="col-lg">
-                                            sdfsfdsfsf
-                                        </div>
-                                    </div>
-                                    <div class="text-center text-box">
-                                        <div class="col-auto">
-                                            <button id="end" type="button"
-                                                class="btn btn-md btn-danger text-white thick mt-1"
-                                                style="width:13%;position:relative;left:-20px;top:310px;"
-                                                onclick="selesaikuis()">Selesai</button>
+                                        <div id="nomorsoal" class="text-black">
+                                            <div class="col-lg"></div>
                                         </div>
                                     </div>
                                 </div>
 
-                            </div>
-                            <div id="hasilkuissatu" hidden>
                                 <div class="container">
-                                    <div class="mint" style="text-align:center;">
-                                        <h4>Hasil Kuis</h4><br>
+                                    <div class="row border border-secondary  isimateri"
+                                        style="height:350px; width: 20%; position:absolute;left:77%;top:6%">
+
                                     </div>
-                                    <div class="row border border-secondary isimateri"
-                                        style="height:350px; width: 50%;position:absolute;left:300px">
-                                        <div class="col-lg">
-                                            <div id="kuishasilsatu" class="text-black">
-                                            </div>
+                                    <div class="text-center text-box">
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-danger btn-lg mb-2"
+                                                style="width:13%;position:absolute;left:82%;top: 385px;">Selesai</button>
                                         </div>
+                                    </div>
+
+                                </div>
+                                <div id="hasilkuis" hidden>
+                                    <div class="mint">
+                                        <h4>Hasil Kuis</h4> <br>
                                     </div>
                                 </div>
 
@@ -327,7 +284,6 @@
             <!-- JS Buatan Sendidi -->
             <script src="../asset/js/script.js"></script>
             <script src="../asset/js/timer.js"></script>
-            <script src="../asset/js/kuis1.js"></script>
 
 
 </body>

@@ -78,8 +78,96 @@ function empat() {
     document.getElementById("mnext").hidden = false;
 }
 
-function isibiodata() {
-    document.getElementById("petunjukkuis").hidden = true;
-    document.getElementById("biodatakuis").hidden = false;
-
+function mulaikuis() {
+    document.getElementById("petunjukkuissatu").hidden = true;
+    document.getElementById("biodatakuissatu").hidden = true;
+    document.getElementById("soalkuissatu").hidden = false;
 }
+
+function selesaikuis() {
+    document.getElementById("soalkuissatu").hidden = true;
+    document.getElementById("hasilkuissatu").hidden = false;
+}
+
+function validasikuis() {
+    const nama = document.getElementById("namaform1").value;
+    const sekolah = document.getElementById("sekolahform1").value;
+    const kelas = document.getElementById("kelasform1").value;
+    const errNama = document.getElementById("errNama");
+    const errSekolah = document.getElementById("errSekolah");
+    const errKelas = document.getElementById("errKelas");
+
+    if ((nama == "") && (sekolah == "") && (kelas == "")) {
+        errNama.innerHTML = `<div class="alert alert-danger" role="alert">
+                            Nama Harus di isi
+                            </div>`
+        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert">
+                            Sekolah Harus di isi
+                            </div>`
+        errKelas.innerHTML = `<div class="alert alert-danger" role="alert">
+                            Silahkan Pikih Kelas
+                            </div>`
+    }
+    else if ((sekolah == "") && (kelas == "")) {
+        errNama.innerHTML = ``
+        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert">
+                            Sekolah Harus di isi
+                            </div>`
+        errKelas.innerHTML = `<div class="alert alert-danger" role="alert">
+                            Silahkan Pikih Kelas
+                            </div>`
+    }
+    else if ((nama == "") && (kelas == "")) {
+        errNama.innerHTML = `<div class="alert alert-danger" role="alert">
+        Nama Harus di isi
+                            </div>`
+        errSekolah.innerHTML = ``
+        errKelas.innerHTML = `<div class="alert alert-danger" role="alert">
+                            Silahkan Pikih Kelas
+                            </div>`
+    }
+    else if ((nama == "") && (sekolah == "")) {
+        errNama.innerHTML = `<div class="alert alert-danger" role="alert">
+        Nama Harus di isi
+                            </div>`
+        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert">
+        Sekolah Harus di isi
+        </div>`
+        errKelas.innerHTML = ``
+    }
+    else if ((sekolah == "") && (kelas == "")) {
+        errNama.innerHTML = ``
+        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert">
+                            Sekolah Harus di isi
+                            </div>`
+        errKelas.innerHTML = `<div class="alert alert-danger" role="alert">
+                            Silahkan Pikih Kelas
+                            </div>`
+    }
+    else if (nama == "") {
+        errNama.innerHTML = `<div class="alert alert-danger" role="alert">
+        Nama Harus di isi
+        </div>`
+        errSekolah.innerHTML = ``
+        errKelas.innerHTML = ``
+    }
+    else if (sekolah == "") {
+        errNama.innerHTML = ``
+        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert">
+        Sekolah Harus di isi
+        </div>`
+        errKelas.innerHTML = ``
+    }
+    else if (kelas == "") {
+        errNama.innerHTML = ``
+        errSekolah.innerHTML = ``
+        errKelas.innerHTML = `<div class="alert alert-danger" role="alert">
+        Silahkan Pikih Kelas
+        </div>`
+    }
+
+    else {
+        mulaikuis();
+    }
+}
+
